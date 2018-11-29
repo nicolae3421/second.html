@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        body{
+            background-color: #333;
+        }
+        #preloader{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -51px 0 0 -51px;
+        }    
+        #preloader .circle{
+            width: 80px;
+            height: 80px;
+            border: 3px solid #aaa;
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            border-radius: 50px;
+        }
+        #preloader .circle .dot{
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            position: absolute;
+            top: 35px;
+            left: -7px;
+            border: 3px solid #333;
+        }
+        @keyframes rot{
+            from{transform: rotate(0deg);}
+              to{transform: rotate(360deg);}
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="circle">
+            <div class="dot"></div>
+        </div>
+    </div>
+</body>
+</html>
