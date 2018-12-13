@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <meta charset="UTF-8">
+    
+    <style>
+        body{
+        background-color: #78b1eb;
+        font-family: arial;
+        }
+        nav>ul>li>a{
+        text-decoration: none;
+        border-right: 1px solid #78b1eb;
+        color: #78b1eb;
+        padding: 13px 2.6vw;
+        display: block;
+        transition: 0.3s;
+        }
+        nav>ul>li>a:active{
+        color: #78b1eb;
+        transition: 0s;
+        }
+        nav{
+        background-color: white;
+        margin: 20px;
+        height: 40px;
+        
+        }
+        nav li{
+        float: left;
+        }
+        nav li:nth-child(9){
+        /* margin-right: ; */
+        }
+        nav a:not(.menu):hover{
+        color: white;
+        background-color: #78b1eb;
+        border: 1px solid white;
+        margin-top: -2px;
+        }
+        nav .burger-menu a{
+        background-color: #46a1fe;
+        color: white;
+        padding: 12px 0;
+        float: right;
+        transition: 0.3s;
+        margin-left: 0;
+        position: relative;
+        
+        }
+        nav .burger-menu{
+            display: none;
+        }
+        nav span{
+        display: block;
+        margin: 2px 13px;
+        background-color: #fff;
+        width: 25px;
+        height: 3px;
+        }
+        nav .burger-menu a:hover{
+        border: 1px solid white;
+        margin-top: -2px;
+        }
+        .burger-menu::before{
+        content: '5';
+        border-radius: 100%;
+        background-color: #46a1fe; 
+        position: absolute;
+        color: white;
+        padding: 6px 10px;
+        /* left: -; */
+        top: 13px;
+        border: 2px solid white;
+        z-index: 1;
+        }
+        
+
+        /* stiluri pentru mobil*/
+        @media screen and (max-width:800px){
+            nav .burger-menu{
+                display: block;
+            }
+            nav li:nth-child(9),
+            nav li:nth-child(8),
+            nav li:nth-child(7),
+            nav li:nth-child(6){
+                display: none;
+        }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Lorem.</a>
+            </li>
+            <li>
+                <a href="#">Distinctio?</a>
+            </li>
+            <li>
+                <a href="#">Fugiat!</a>
+            </li>
+            <li>
+                <a href="#">Dicta?</a>
+            </li>
+            <li>
+                <a href="#">Recusandae.</a>
+            </li>
+            <li>
+                <a href="#">Fuga?</a>
+            </li>
+            <li>
+                <a href="#">Enim.</a>
+            </li>
+            <li>
+                <a href="#">Excepturi.</a>
+            </li>
+            <li>
+                <a href="#">Lorem2.</a>
+            </li>
+            <li class="burger-menu">
+                <a href="#" class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
